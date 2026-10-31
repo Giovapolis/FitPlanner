@@ -68,9 +68,11 @@ Más detalle en [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 Requisitos:
 
-- Windows con JDK 17 (Temurin o el JBR de Android Studio).
+- Windows con **JDK 17** (Temurin o equivalente). No uses Java 25 para Gradle.
 - Android SDK con platform 35 y build-tools 35.
 - El wrapper de Gradle incluido.
+
+Si Android Studio muestra “Gradle 8.14.5 is incompatible with the Gradle JVM version 25”, sigue la guía paso a paso: [docs/ANDROID_STUDIO.md](docs/ANDROID_STUDIO.md). El JDK de arranque de la IDE puede ser 25; el **Gradle JDK** debe ser 17.
 
 `local.properties` debe apuntar al SDK local:
 
